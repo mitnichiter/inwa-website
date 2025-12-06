@@ -48,7 +48,7 @@ export default function ContactPage() {
                                 <div>
                                     <h3 className="text-lg font-bold uppercase tracking-wider">Product Question?</h3>
                                     <Button asChild size="lg" className="mt-4 w-full gap-2 sm:w-auto font-bold">
-                                        <Link href="https://wa.me/1234567890" target="_blank">
+                                        <Link href="https://wa.me/918086619029" target="_blank">
                                             <MessageCircle className="h-5 w-5" />
                                             Chat on WhatsApp
                                         </Link>

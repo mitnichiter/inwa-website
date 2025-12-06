@@ -43,7 +43,7 @@ export default async function ProductsPage() {
                                     </div>
                                     <p className="text-sm text-muted-foreground line-clamp-2">{product.description}</p>
                                     <Button asChild className="mt-2 w-full gap-2 font-bold">
-                                        <Link href={`https://wa.me/1234567890?text=I'm interested in ${product.name}`} target="_blank">
+                                        <Link href={`https://wa.me/918086619029?text=I'm interested in ${product.name}`} target="_blank">
                                             <MessageCircle className="h-4 w-4" />
                                             Inquire via WhatsApp
                                         </Link>
