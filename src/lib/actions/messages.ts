@@ -53,3 +53,32 @@ export async function getMessages() {
         return { success: false, error: "Failed to fetch messages" };
     }
 }
+
+export async function deleteMessage(id: number) {
+    try {
+        await prisma.message.delete({
+            where: { id },
+        });
+        revalidatePath("/admin/messages");
+        revalidatePath("/admin");
+        return { success: true };
+    } catch (error) {
+        console.error("Failed to delete message:", error);
+        return { success: false, error: "Failed to delete message" };
+    }
+}
+
+export async function markAsRead(id: number) {
+    try {
+        await prisma.message.update({
+            where: { id },
+            data: { status: "Read" },
+        });
+        revalidatePath("/admin/messages");
+        revalidatePath("/admin");
+        return { success: true };
+    } catch (error) {
+        console.error("Failed to mark message as read:", error);
+        return { success: false, error: "Failed to mark message as read" };
+    }
+}

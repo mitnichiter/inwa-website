@@ -14,8 +14,8 @@ export default async function AdminDashboard() {
         },
         {
             title: "New Messages",
-            value: (stats?.messages ?? 0).toString(),
-            description: "Total inquiries received",
+            value: (stats?.unread ?? 0).toString(),
+            description: "Unread inquiries",
             icon: MessageSquare,
         },
     ];

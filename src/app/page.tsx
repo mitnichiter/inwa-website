@@ -131,12 +131,12 @@ export default async function Home() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted/10 lg:aspect-auto lg:h-[600px]">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative h-64 w-64">
+                  <div>
                     <Image
-                      src="/inwalogo.png"
+                      src="/dih.webp"
                       alt="INWA Brand Heritage"
                       fill
-                      className="object-contain opacity-80"
+                      className="object-cover opacity-100"
                     />
                   </div>
                 </div>

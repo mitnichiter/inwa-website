@@ -17,7 +17,8 @@ export async function getDashboardStats() {
             success: true,
             data: {
                 products: productCount,
-                messages: messageCount,
+                messages: totalMessages,
+                unread: unreadMessages,
                 views,
                 inquiries,
             },
