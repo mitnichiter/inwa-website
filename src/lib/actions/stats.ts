@@ -4,9 +4,10 @@ import prisma from "@/lib/prisma";
 
 export async function getDashboardStats() {
     try {
-        const [productCount, messageCount] = await Promise.all([
+        const [productCount, totalMessages, unreadMessages] = await Promise.all([
             prisma.product.count(),
             prisma.message.count(),
+            prisma.message.count({ where: { status: "New" } }),
         ]);
 
         // Mocking views and inquiries for now as we don't track them in DB yet
