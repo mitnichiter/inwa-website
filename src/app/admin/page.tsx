@@ -18,18 +18,6 @@ export default async function AdminDashboard() {
             description: "Total inquiries received",
             icon: MessageSquare,
         },
-        {
-            title: "Total Views",
-            value: (stats?.views ?? 0).toLocaleString(),
-            description: "Mocked view count",
-            icon: Users,
-        },
-        {
-            title: "Inquiries",
-            value: (stats?.inquiries ?? 0).toString(),
-            description: "Mocked WhatsApp clicks",
-            icon: TrendingUp,
-        },
     ];
 
     return (
