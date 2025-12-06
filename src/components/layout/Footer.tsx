@@ -29,26 +29,12 @@ export function Footer() {
                         <Link href="/contact" className="hover:text-primary transition-colors">
                             Contact Us
                         </Link>
-                        <Link href="#" className="hover:text-primary transition-colors">
-                            Terms
-                        </Link>
-                        <Link href="#" className="hover:text-primary transition-colors">
-                            Privacy
-                        </Link>
                     </div>
 
                     <div className="flex gap-4">
-                        <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                        <Link href="https://www.instagram.com/inwa_flavors/" className="text-muted-foreground hover:text-primary transition-colors">
                             <span className="sr-only">Instagram</span>
                             <Instagram className="h-5 w-5" />
-                        </Link>
-                        <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                            <span className="sr-only">Facebook</span>
-                            <Facebook className="h-5 w-5" />
-                        </Link>
-                        <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                            <span className="sr-only">Twitter</span>
-                            <Twitter className="h-5 w-5" />
                         </Link>
                     </div>
                 </div>

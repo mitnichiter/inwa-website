@@ -31,8 +31,8 @@ export default async function Home() {
             <div
               className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm text-primary"
             >
-              <Star className="mr-2 h-3.5 w-3.5 fill-primary" />
-              <span>Premium Artisanal Halwa</span>
+              <Star className="h-3.5 w-3.5 fill-primary" />
+              <span>Authentic Calicut Halwa, crafted with care by Inwa.</span>
             </div>
             <h1 className="text-6xl font-black tracking-tighter sm:text-7xl md:text-9xl lg:text-[12rem] leading-none select-none">
               HALWA.
@@ -116,16 +116,18 @@ export default async function Home() {
                   Tradition, <span className="text-primary">Perfected.</span>
                 </h2>
                 <p className="mt-6 text-lg text-muted-foreground/80">
-                  We don't just make halwa; we craft experiences. Using time-honored recipes passed down through generations, we infuse modern techniques to create a texture and flavor profile that is simply unmatched.
+                  Inwa brings you the rich, timeless taste of authentic Calicut Halwa. Crafted using traditional Kozhikode recipes and high-quality ingredients, every batch is made with care, purity, and passion.
+Our mission is simple — to deliver the original flavour of Kozhikode’s famous halwa in its freshest, most premium form.
+With Inwa, you don’t just taste halwa; you experience a piece of Calicut tradition.
                 </p>
                 <div className="mt-10 grid grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-xl font-bold text-primary">100%</h3>
-                    <p className="mt-2 text-sm text-muted-foreground/80">Natural Ingredients</p>
+                    <p className="mt-2 text-sm text-muted-foreground/80">Authentic Source</p>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary">50+</h3>
-                    <p className="mt-2 text-sm text-muted-foreground/80">Years of Heritage</p>
+                    <h3 className="text-xl font-bold text-primary">12+</h3>
+                    <p className="mt-2 text-sm text-muted-foreground/80">Varieties of Flavors</p>
                   </div>
                 </div>
               </div>
