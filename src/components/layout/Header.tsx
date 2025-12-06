@@ -63,7 +63,7 @@ export function Header() {
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="right">
-                        <div className="flex flex-col gap-6 mt-8">
+                        <div className="flex flex-col gap-6 mt-8 px-6">
                             <Link href="/" onClick={() => setIsOpen(false)} className={cn("text-lg font-medium transition-colors hover:text-primary", pathname === "/" ? "text-primary" : "text-muted-foreground")}>Home</Link>
                             <Link href="/products" onClick={() => setIsOpen(false)} className={cn("text-lg font-medium transition-colors hover:text-primary", pathname === "/products" ? "text-primary" : "text-muted-foreground")}>Products</Link>
                             <Link href="/contact" onClick={() => setIsOpen(false)} className={cn("text-lg font-medium transition-colors hover:text-primary", pathname === "/contact" ? "text-primary" : "text-muted-foreground")}>Contact</Link>

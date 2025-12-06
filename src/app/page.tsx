@@ -17,6 +17,16 @@ export default async function Home() {
         {/* Hero Section */}
         <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-background">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+          {/* Background Overlay */}
+          <div className="absolute inset-0 z-0 select-none pointer-events-none">
+            <Image
+              src="/bg.png"
+              alt="Hero Background"
+              fill
+              className="object-cover opacity-25 mix-blend-multiply dark:mix-blend-screen"
+              priority
+            />
+          </div>
           <div className="container relative z-10 px-8 md:px-16 lg:px-32 xl:px-48 text-center">
             <div
               className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm text-primary"

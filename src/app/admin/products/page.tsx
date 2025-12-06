@@ -197,7 +197,7 @@ export default function ProductsAdminPage() {
                 </Dialog>
             </div>
 
-            <div className="rounded-md border">
+            <div className="rounded-md border overflow-x-auto">
                 <Table>
                     <TableHeader>
                         <TableRow>
@@ -226,7 +226,7 @@ export default function ProductsAdminPage() {
                                             <img src={product.imageUrl} alt={product.name} className="h-full w-full object-cover" />
                                         </div>
                                     </TableCell>
-                                    <TableCell className="font-medium">{product.name}</TableCell>
+                                    <TableCell className="font-medium whitespace-nowrap">{product.name}</TableCell>
                                     <TableCell>{product.price}</TableCell>
                                     <TableCell>{product.stock}</TableCell>
                                     <TableCell>
