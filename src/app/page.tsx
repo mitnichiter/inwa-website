@@ -8,7 +8,7 @@ import { getProducts } from "@/lib/actions/products";
 
 export default async function Home() {
   const { data: allProducts } = await getProducts();
-  const featuredProducts = allProducts?.slice(0, 3) || [];
+  const featuredProducts = allProducts?.slice(0, 4) || [];
 
   return (
     <div className="flex min-h-screen flex-col">
