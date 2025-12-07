@@ -38,8 +38,8 @@ export default async function ProductsPage() {
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <div className="flex justify-between items-start">
-                                        <h3 className="text-lg font-bold leading-tight">{product.name}</h3>
-                                        <span className="text-sm font-medium">₹{product.price}</span>
+                                        <h3 className="text-sm font-bold leading-tight">{product.name}</h3>
+                                        <span className="text-xl font-bold ">₹{product.price}</span>
                                     </div>
                                     <p className="text-sm text-muted-foreground line-clamp-2">{product.description}</p>
                                     <Button asChild className="mt-2 w-full gap-2 font-bold">
