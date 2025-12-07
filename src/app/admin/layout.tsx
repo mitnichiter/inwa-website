@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, Package, MessageSquare, LogOut, Menu } from "lucide-react";
+import { LayoutDashboard, Package, MessageSquare, LogOut, Menu, Image as ImageIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { signOut } from "next-auth/react";
@@ -12,6 +12,7 @@ const sidebarItems = [
     { name: "Dashboard", href: "/admin", icon: LayoutDashboard },
     { name: "Products", href: "/admin/products", icon: Package },
     { name: "Messages", href: "/admin/messages", icon: MessageSquare },
+    { name: "Banners", href: "/admin/banners", icon: ImageIcon },
 ];
 
 export default function AdminLayout({
