@@ -20,7 +20,7 @@ export default async function Home() {
           {/* Background Overlay */}
           <div className="absolute inset-0 z-0 select-none pointer-events-none">
             <Image
-              src="/bg.png"
+              src="/bgchristmas.png"
               alt="Hero Background"
               fill
               className="object-cover opacity-25 mix-blend-multiply dark:mix-blend-screen"
@@ -29,20 +29,20 @@ export default async function Home() {
           </div>
           <div className="container relative z-10 px-8 md:px-16 lg:px-32 xl:px-48 text-center">
             <div
-              className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm text-primary"
+              className=" inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm text-primary"
             >
               <Star className="h-3.5 w-3.5 fill-primary" />
-              <span>Authentic Calicut Halwa, crafted with care by Inwa.</span>
+              <span>Authentic Calicut Halwa</span>
             </div>
             <h1 className="text-6xl font-black tracking-tighter sm:text-7xl md:text-9xl lg:text-[12rem] leading-none select-none">
-              HALWA.
+              HALWA
               <br />
-              <span className="text-primary">REIMAGINED.</span>
+              <span className="text-primary">REIMAGINED</span>
             </h1>
-            <p className="mx-auto mt-8 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+            <p className="ml-auto mr-auto mt-0 max-w-2xl text-lg text-muted-foreground sm:text-xl">
               Experience the perfect fusion of tradition and modern luxury. Handcrafted with the finest ingredients for an unforgettable taste.
             </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mt-5 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button size="lg" className="h-12 px-8 text-base font-bold" asChild>
                 <Link href="/products">
                   Explore Collection <ArrowRight className="ml-2 h-4 w-4" />
