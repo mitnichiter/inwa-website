@@ -4,6 +4,12 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
 import { getProducts } from "@/lib/actions/products";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Our Collection",
+    description: "Browse our premium selection of authentic Calicut Halwa. Find your favorite flavors.",
+};
 
 export default async function ProductsPage() {
     const { data: products } = await getProducts();

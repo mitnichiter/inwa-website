@@ -11,6 +11,12 @@ import Link from "next/link";
 import { submitContactForm } from "@/lib/actions/messages";
 import { toast } from "sonner";
 import { useRef } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact Us",
+    description: "Get in touch with INWA. We're here to answer your questions about our premium halwa.",
+};
 
 export default function ContactPage() {
     const formRef = useRef<HTMLFormElement>(null);

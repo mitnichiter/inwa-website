@@ -7,6 +7,12 @@ import { Footer } from "@/components/layout/Footer";
 import { getProducts } from "@/lib/actions/products";
 import { getBanners } from "@/lib/actions/banners";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Discover the authentic taste of Calicut Halwa, reimagined for the modern era. Handcrafted with passion.",
+};
 
 export default async function Home() {
   const { data: allProducts } = await getProducts();
@@ -42,9 +48,9 @@ export default async function Home() {
                   <span>Authentic Calicut Halwa</span>
                 </div>
                 <h1 className="text-5xl font-black tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] select-none text-foreground">
-                  HALWA
+                  INWA
                   <br />
-                  <span className="text-primary">REIMAGINED</span>
+                  <span className="text-primary">HALWA</span>
                 </h1>
                 <p className="mt-6 max-w-lg text-lg text-muted-foreground sm:text-xl">
                   Experience the perfect fusion of tradition and modern luxury. Handcrafted with the finest ingredients for an unforgettable taste.
