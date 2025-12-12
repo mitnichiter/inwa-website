@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://inwa-website.vercel.app",
+    url: "https://inwa.store",
     siteName: "INWA",
     title: "INWA | Halwa Reimagined",
     description: "Premium artisanal halwa for the modern palate.",
@@ -66,10 +66,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "INWA",
-              url: "https://inwa-website.vercel.app",
+              url: "https://inwa.store",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://inwa-website.vercel.app/search?q={search_term_string}",
+                target: "https://inwa.store/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),
