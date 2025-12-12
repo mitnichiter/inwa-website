@@ -54,6 +54,22 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} antialiased font-sans bg-background text-foreground`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "INWA",
+              url: "https://inwa-website.vercel.app",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://inwa-website.vercel.app/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
         {children}
         <Analytics />
         <SpeedInsights />
