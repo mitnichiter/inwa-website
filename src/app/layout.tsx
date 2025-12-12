@@ -40,7 +40,12 @@ export const metadata: Metadata = {
     // images: ["/twitter-image.jpg"],
   },
   icons: {
-    icon: "/inwalogo.png",
+    icon: [
+      { url: "/inwalogo.png" },
+      { url: "/inwalogo.png", type: "image/png" },
+    ],
+    shortcut: "/inwalogo.png",
+    apple: "/inwalogo.png",
   },
 };
 
